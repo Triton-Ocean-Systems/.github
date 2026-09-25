@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="banner.svg" alt="Triton Ocean Systems" width="100%">
+  <img src="banner.png.png" alt="Triton Ocean Systems: building the distributed intelligence layer for the ocean" width="100%">
 </p>
 
 <p align="center">
@@ -25,6 +25,36 @@ We are an early-stage company based in South Florida, starting with coastal depl
 | **Edge + Comms** | On-node inference, event-driven sensing and smart transmission over cellular, LoRa, mesh and satellite, so only what matters leaves the node. |
 | **Triton Coastal** | Our first application: coastal intelligence for Florida communities, starting with sargassum monitoring and response planning. |
 
+## How it fits together
+
+```mermaid
+flowchart LR
+    subgraph Field["In the water"]
+        B["BeachNode"]
+        O["OceanNode"]
+        S["SailNode"]
+    end
+    E["Edge processing<br/>detect, compress, prioritize"]
+    C["Multi-path comms<br/>cellular, LoRa, mesh, satellite"]
+    P["Triton platform<br/>normalize, store, correlate"]
+    X["External feeds<br/>AIS, NOAA, NWS"]
+    V["Triton SEAVANT<br/>operator console"]
+    A["Partner APIs<br/>open schemas"]
+    B --> E
+    O --> E
+    S --> E
+    E --> C --> P
+    X --> P
+    P --> V
+    P --> A
+```
+
+## Where we are
+
+- **Now:** building and bench-validating Ocean Node 001, our reference prototype, and developing Triton SEAVANT.
+- **Next:** first field deployment in South Florida, then paid pilots with coastal operators.
+- **Open work:** we publish our data formats openly, starting with the [Triton Observation Schema](https://github.com/Triton-Ocean-Systems/triton-observation-schema).
+
 ## Principles
 
 - **Persistent, not periodic.** Continuous observation catches change early.
@@ -35,11 +65,19 @@ We are an early-stage company based in South Florida, starting with coastal depl
 
 ## Repositories
 
-Our core platform, hardware and autonomy repositories (SEAVANT, Ocean Node 001 and its autonomy stack) are private while in active development. Access for partners and investors is available on request. Public specifications and open data interfaces will appear here as they are released.
+| Repository | |
+|---|---|
+| [**triton-observation-schema**](https://github.com/Triton-Ocean-Systems/triton-observation-schema) | Open JSON Schema for ocean observation records with built-in provenance. Public, Apache-2.0. |
 
-## Contact
+Our core platform, hardware and autonomy repositories (SEAVANT, Ocean Node 001 and its autonomy stack) are private while in active development. Access for partners and investors is available on request.
 
-Partnerships, pilots and investor inquiries: **tritonminingco@gmail.com**
+## Work with us
+
+- **Coastal operators, counties and marinas:** interested in a pilot deployment.
+- **Researchers and agencies:** interested in data partnerships or shared infrastructure.
+- **Investors:** interested in the company and our roadmap.
+
+Reach us at **tritonminingco@gmail.com**.
 
 <p>
   <a href="https://www.instagram.com/tritonoceansystems"><img src="https://img.shields.io/badge/Instagram-tritonoceansystems-0a2a43?logo=instagram&logoColor=white" alt="Instagram"></a>

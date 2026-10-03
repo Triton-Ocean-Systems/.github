@@ -16,6 +16,8 @@ The ocean is severely under-observed. Sensing is expensive, sensors are isolated
 
 We are an early-stage company based in South Florida, starting with coastal deployments along Florida's Gulf and Atlantic coasts.
 
+Triton Ocean Systems is a [Deep Blue Ventures](https://github.com/Deep-Blue-Ventures) company.
+
 ## What we're building
 
 | | |
@@ -84,4 +86,4 @@ Reach us at **tritonminingco@gmail.com**.
   <a href="https://www.youtube.com/@TritonMiningCo"><img src="https://img.shields.io/badge/YouTube-Triton-0a2a43?logo=youtube&logoColor=white" alt="YouTube"></a>
 </p>
 
-<sub>© Triton Ocean Systems. All rights reserved.</sub>
+<sub>© Triton Ocean Systems, a <a href="https://github.com/Deep-Blue-Ventures">Deep Blue Ventures</a> company. All rights reserved.</sub>
